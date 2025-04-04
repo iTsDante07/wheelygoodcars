@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+// routes/api.php
+
+use App\Http\Controllers\CarController;
+
+Route::get('/car-info', [CarController::class, 'getCarInfoFromRDW']);
+
+Route::get('/api/get-car-info/{kenteken}', [CarController::class, 'getCarInfo']);

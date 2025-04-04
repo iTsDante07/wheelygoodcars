@@ -22,6 +22,9 @@
                     <div class="mb-3">
                         <input type="submit" class="btn btn-primary text-dark" value="Inloggen">
                     </div>
+                    <a class="register1" href="{{ route('register') }}">
+                        Nu registreren en starten
+                    </a>
                 </form>
             </div>
         </div>
